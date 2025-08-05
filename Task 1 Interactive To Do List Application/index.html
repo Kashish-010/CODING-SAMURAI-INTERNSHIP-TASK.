@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="flex">
+            <ul class="nav flex">
+                <li><a href="To-Do List App.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="drop">Theme
+                    <ul class="dropdown">
+                        <li onclick="setTheme('Blue')">Blue</li>
+                        <li onclick="setTheme('Cute')">Cute</li>
+                        <li onclick="setTheme('Dark')" >Dark Mode</li>
+                        <li onclick="setTheme('Light')">Light</li>
+                        <li onclick="setTheme('Nature')">Nature</li>
+                        <li onclick="setTheme('Space')">Space</li>
+                        <li onclick="setTheme('Summer')">Summer</li>
+                     
+                    </ul>
+                </li>
+            </ul>
+            <button id="save" onclick="saveList()">Save</button>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="todo">
+                <h2>To-Do List <img src="red.png"></h2>
+                <div class="row"><input type="text" placeholder="Add your task" id="inputb">
+                    <button onclick=addTask()>Add</button>
+                </div>
+                <ul id="list-container">
+                </ul>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
