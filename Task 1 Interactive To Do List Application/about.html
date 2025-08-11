@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <nav class="flex">
+            <ul class="nav flex">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="drop">Theme
+                    <ul class="dropdown">
+                        <li onclick="setTheme('Blue')">Blue</li>
+                        <li onclick="setTheme('Cute')">Cute</li>
+                        <li onclick="setTheme('Dark')" >Dark Mode</li>
+                        <li onclick="setTheme('Light')">Light</li>
+                        <li onclick="setTheme('Nature')">Nature</li>
+                        <li onclick="setTheme('Space')">Space</li>
+                        <li onclick="setTheme('Summer')">Summer</li>
+                     
+                    </ul>
+                </li>
+            </ul>
+            <button id="save" onclick="saveList()">Save</button>
+        </nav>
+
+  <section class="page">
+    <h2 align="center">About This App</h2>
+    <div class="aboutdiv">
+    <p>This is a cute and customizable To-Do List app made for organizing your daily tasks easily.</p>
+    <ul>
+      <li>Add and delete tasks</li>
+      <li>Choose between multiple themes like Space, Summer, Nature</li>
+      <li>Save and view notes</li>
+      <li>Your theme and notes are remembered next time you visit</li>
+    </ul>
+    </div>
+  </section>
+      <script src="script.js"></script>
+</body>
+</html>
